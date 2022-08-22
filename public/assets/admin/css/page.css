@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ページ個別で設定するCSS */
+
+
+/* レッスン概要 --------------------------------------------------- */
+
+section.type_summary {
+	padding: 30px 0px 0px;
+}
+
+section.type_summary .lesson_ttl {
+	font-size: 14px !important;
+}
+
+section.type_summary .profile_name > p {
+	font-size: 12px;
+}
+
+section.type_summary .target_area {
+	font-size: 11px !important;
+	font-weight: normal;
+}
+
+section.type_summary .teacher_info_02 li:first-child {
+	width: 18%;
+}
+
+section.type_summary .teacher_info_02 .about_teacher {
+	width: 82%;
+}
+
+section.type_summary .list_box li:first-child {
+	border: 0px;
+}
+
+
+
+

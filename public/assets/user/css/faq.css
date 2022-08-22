@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+section#faq-top {
+	background: #FFF;
+	margin: 0px 0px 40px;
+	padding: 30px 15px 20px;
+}
+
+h2.faq_ttl {
+	font-size: 25px;
+	text-align: left;
+	padding: 15px 0px 0px;
+}
+
+h2.faq_ttl span {
+	font-size: 14px;
+}
+
+h2.faq_ttl big {
+	font-size: 18px;
+}
+
+.komaru_list {
+	padding: 5px 0px;
+}
+
+.komaru_list li {
+	background: #FFF;
+	border: 1px solid #E8793B;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 15px 0px;
+}
+
+.komaru_list li a {
+	padding: 20px 0px;
+	display: block;
+}
+
+section#question button {
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 17px;
+}
+
+.faq_wrap {
+	padding: 10px 0px 40px;
+}
+
+.q_box {
+	padding: 0px 0px 10px;
+	position: relative;
+	font-size: 18px;
+	font-weight: bold;
+	text-indent: -30px;
+	margin-left: 33px;
+	line-height: 160%;
+}
+
+.q_box::before {
+	content: 'Q.';
+	color: #FA4712;
+}
+
+.a_box {
+	padding: 10px 0px 0px;
+	position: relative;
+	font-size: 12px;
+	text-indent: -20px;
+	margin-left: 35px;
+	line-height: 160%;
+}
+
+.a_box::before {
+	content: 'A.';
+	color: #24B4EA;
+}
+
+section#question .button_area {
+	max-width: 280px;
+	margin: 0px auto;
+}
+
+
+
+
+
+
+

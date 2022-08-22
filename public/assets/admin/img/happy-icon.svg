@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.057" height="22.057" viewBox="0 0 22.057 22.057">
+  <g id="happy-icon" transform="translate(4.137) rotate(13)">
+    <circle id="ellipse" cx="8.696" cy="8.696" r="8.696" transform="translate(0.5 0.5)" fill="none" stroke="#5bbeea" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="ellipse-2" data-name="ellipse" cx="0.669" cy="0.669" r="0.669" transform="translate(5.781 5.781)" fill="none" stroke="#5bbeea" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <circle id="ellipse-3" data-name="ellipse" cx="0.669" cy="0.669" r="0.669" transform="translate(11.273 5.781)" fill="none" stroke="#5bbeea" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="path" d="M6.3,13.5a6.029,6.029,0,0,0,4.95,2.676A5.851,5.851,0,0,0,16.2,13.5" transform="translate(-2.054 -1.629)" fill="none" stroke="#5bbeea" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

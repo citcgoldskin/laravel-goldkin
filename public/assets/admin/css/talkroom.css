@@ -1,0 +1,851 @@
+@charset "utf-8";
+/* CSS Document */
+
+.talk_area li.start-active{
+	display: none;
+}
+.talk_area li.start-active.appear{
+	display:flex;
+}
+/* --------------------------------------------------------------------
+トークルームのヘッダー
+-------------------------------------------------------------------- */
+.todo_list li .icon-area img{
+	width:100%;
+}
+.talkroom_wrap {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	max-width: 780px;
+}
+.display_area.on{
+	overflow: scroll;
+	height:81vh;
+}
+
+section.talk_page {
+	padding: 70px 0px 0px;
+}
+
+.talkroom_header_menu .header_area h1 {
+    text-align: left;
+    left: 30px;
+	transform: translateY(-50%);
+	font-size: 13px !important;
+	font-weight: normal !important;
+}
+
+.menu_btn_area {
+	border-bottom: 1px solid rgba(41,39,36,0.1);
+	margin: 30px 0 0 0;
+}
+
+.menu_btn_area ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 500px;
+	margin: 0px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.menu_btn_area li {
+	box-sizing: border-box;
+	width: 33%;
+	text-align: center;
+}
+
+.menu_btn_area li.click_btn {
+	background-repeat: no-repeat !important;
+	background-size: auto 50px !important;
+	background-position: center center !important;
+}
+
+.menu_notice a {
+	background: url("../img/talkroom/menu_off-notice.svg") center top no-repeat;	
+	background-size:30%;
+}
+.menu_notice a:after{
+	content:"通知オン";
+		margin: 10px 0 0 0;
+	display: block;
+}
+
+.menu_notice a.active {
+	background: url("../img/talkroom/menu_on-notice.svg") center top no-repeat;	
+	background-size:30%;
+}
+.menu_notice a.active:after{
+	content:"通知オフ";
+		margin: 10px 0 0 0;
+	display: block;
+}
+
+.menu_block a {
+	background: url("../img/talkroom/menu_off-block.svg") center top no-repeat;	
+	background-size:26%;
+}
+.menu_block a:after{
+	content:"ブロック";
+		margin: 10px 0 0 0;
+	display: block;
+}
+
+.menu_block a.active {
+	background: url("../img/talkroom/menu_on-block.svg") center top no-repeat;	
+	background-size:26%;
+}
+.menu_block a.active:after{
+	content:"ブロック解除";
+	margin: 10px 0 0 0;
+	display: block;
+}
+
+.menu_report a {
+	background: url("../img/talkroom/menu_off-report.svg") center top no-repeat;	
+	background-size:23%;
+}
+.menu_report a:after{
+	content:"通報";
+		margin: 10px 0 0 0;
+	display: block;
+}
+
+.menu_eport a.active {
+	background: url("../img/talkroom/menu_on-report.svg") center top no-repeat;	
+	background-size:23%;
+}
+.menu_report a.active:after{
+	content:"通報中";
+		margin: 10px 0 0 0;
+	display: block;
+}
+
+
+
+.menu_btn_area li a {
+	display: block;
+	padding: 40px 0 30px 0;
+}
+.menu_btn_area.mark li a{
+	font-size:12px;
+}
+body.talkroom .board_box {
+	border-radius: 15px;
+	filter: drop-shadow(0px 10px 15px rgba(27,28,32,0.1));
+}
+
+
+.lesson_rireki {
+	padding: 10px 0px;
+}
+
+.lesson_rireki p:nth-of-type(1) {
+	font-size: 12px;
+	color: #798186;
+}
+
+.lesson_rireki p:nth-of-type(2) {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+
+.lesson_rireki p:nth-of-type(3) {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.lesson_rireki p:nth-of-type(3) > small {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+body.talkroom .switch_box {
+    font-size: 14px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------
+トークルームのフッター
+-------------------------------------------------------------------- */
+
+.talkroom_menu {
+	max-width: 780px;
+	height: 100%;
+	margin: 0px auto;
+	background: #E6E7E8;
+	position: relative;
+}
+
+.talkroom_menu a {
+	display: block;
+}
+
+.talkroom_menu .menu {
+	position: relative;
+	top:1px;
+}
+
+.send_area {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	align-items: center !important;
+	justify-content: flex-start;
+	width: 82% !important;
+	padding: 5px !important;
+	top: 4px;
+	left: 72px;
+	position: absolute;
+}
+.send_area > div {
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.talkroom_menu .input-text {
+	width: 84%;
+}
+
+.talkroom_menu .input-text textarea#textarea {
+	width: 100%;	padding: 12px !important;
+	box-sizing: border-box;
+	height:37px;
+
+}
+
+.talkroom_menu .send_btn {
+	width: 45px;
+}
+
+.send_area .send_btn img {
+	filter: drop-shadow(0px 10px 10px rgba(252,150,103,1));
+}
+
+.menu .acd-check{
+    display: none !important;
+}
+
+.menu .acd-label::before,
+.menu .acd-check:checked + .menu .acd-label::before,
+.menu .acd-label::after {
+    display: none !important;
+}
+
+.menu .acd-label {
+	background: #414042;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 5px;
+	width: 66px;
+	height: 65px;
+}
+.tal{
+	text-align: left !important;
+}
+
+.acd-check + .acd-label > p {
+	text-align: center;
+	font-size:12px;
+	padding: 15px 0 0 0;
+	line-height: 1.5;
+}
+.acd-check + .acd-label > p.ind{
+	text-indent: -2em;
+	padding-left: 2em;
+}
+.calender-sort .acd-check + .acd-label > p:after{
+	display: none;
+}
+.acd-check + .acd-label > p:after{
+	content:"▲";
+	margin: 5px 0 0;
+	display: block;
+	transform: scale(1,0.6);	
+}
+.acd-check.on + .acd-label > p:after{
+	content:"▼";
+}
+.menu .talkroom_content {
+    height: 0;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+	position: relative;
+}
+
+.menu .acd-check:checked + .acd-label + .talkroom_content {
+	width: 100%;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+	left: 0px;
+	bottom: 65px;
+	position: absolute;
+	background: #414042;
+}
+
+.talkroom_f-submenu {
+	width: 100%;
+}
+
+.cancel_application {
+	color: #FFF;
+	background: url("../img/talkroom_img.png");
+	background-repeat: no-repeat;
+	background-size: auto 84%;
+    background-position: right 10px bottom -2px;
+	position: relative;
+	padding: 20px;
+}
+
+.sub_inner {
+	width: 77%;
+}
+
+.sub_inner > p:nth-of-type(1) {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.sub_inner > p:nth-of-type(2) {
+	font-size: 11px;
+	padding: 10px 0px 0px;
+}
+
+.sub_inner .button-area {
+	margin: 0px !important;
+	width: 68% !important;
+}
+.sub_inner .button-area.long{
+	width:90% !important;
+}
+.btn_cancel {
+	background: #798186;
+	margin: 10px 0px 0px;
+	font-size: 13px;
+}
+
+.btn_cancel a {
+	padding: 9px 0px;
+}
+
+.btn_cancel::after {
+	content: '';
+	background: url("../img/icon_arrow_right_white.png");
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	display: inline-block;
+	width: 6px;
+	height: 10px;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.task_area {
+	background: #FAF8F4;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.task_area > div {
+	box-sizing: border-box;
+	width: 50%;
+	position: relative;
+	text-align: center;
+}
+
+.task_area > div a {
+	display: block;
+	padding: 28px 20px;
+}
+
+.task_icon {
+	padding: 0px 0px 0px 48px !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	 display: inline-block;
+    margin: 0px auto;
+    position: relative;
+}
+
+.task_icon::before {
+	content: '';
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	display: inline-block;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.task_reserved::before {
+	background: url("../img/icon_talkroom_calender.png");
+	width: 43px;
+	height: 43px;
+}
+
+
+.task_request::before {
+	background: url("../img/icon_talkroom_request.png");
+	width: 51px;
+	height: 43px;
+}
+
+
+/* --------------------------------------------------------------------
+トークルーム
+-------------------------------------------------------------------- */
+
+.icon_speaker label {
+    padding: 0px 10px 0px 40px;
+	filter: drop-shadow(0px 5px 5px rgba(219,219,219,0.63));
+	border-bottom: 1px solid rgba(41,39,36,0.1);
+}
+
+.icon_speaker p {
+	text-align: left !important;
+    padding: 16px 10px 16px 2px !important;
+	color: #5BBEEA;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.icon_speaker .grad-item p {
+	text-align: left !important;
+    padding: 16px 10px 16px 40px !important;
+	background: #FFF;
+	position: relative;
+}
+
+.icon_speaker .acd-label::before,
+.icon_speaker .acd-check:checked + .acd-label::before,
+.icon_speaker p::before {
+	content: '';
+	background: url("../img/icon_speaker.png");
+	width: 14px !important;
+	height: 15px !important;
+	left: 20px !important;
+}
+
+.icon_speaker .grad-item p::before {
+	content: '';
+	background: url("../img/icon_speaker.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 14px !important;
+	height: 15px !important;
+	left: 20px !important;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.icon_speaker .acd-label::after {
+    background: url(../img/arrow_bottom_blue.svg) !important;
+    width: 10px !important;
+    height: 6px !important;
+}
+
+.icon_speaker .acd-check:checked + .acd-label::after {
+    background: url("../img/arrow_top.svg") !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+
+.talkroom_list li a{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	border-bottom: 1px solid rgba(41,39,36,0.1);
+	padding: 14px 10px;
+}
+
+.talkroom_list li a > div {
+	box-sizing: border-box;
+}
+
+.talkroom_list li a .text-area > p {
+    padding: 0 25px 0 0;
+	font-size: 14px;
+    font-weight: 500;	
+}
+
+.talkroom_list li a span.midoku {
+    top: 57%;
+    right: 19px;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.talkroom_list li a span.midoku2{
+   top: 70%;
+    right: 19px;
+    transform: translateY(-50%);
+    position: absolute;
+	color: #FFF;
+  font-size: 7px;
+  font-weight: 900;
+  z-index: 10;
+  letter-spacing: 0px;
+}
+.talkroom_list li a span.midoku2::after {
+  content: '';
+  background: #FA4712;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  z-index: -1;
+}
+.talkroom_list li a .text-small > div {
+    font-size: 12px;
+}
+
+.talkroom_list li a .text-small > div:nth-of-type(1) {
+    width: 76%;
+}
+
+.talkroom_list li a .text-small > div:nth-of-type(2) {
+    width: 24%;
+	font-size: 10px;
+	letter-spacing: 0;
+}
+
+.talk_date_area {
+	text-align: center;
+	padding: 0px 0px 10px;
+}
+
+.talk_date_area > p {
+	background: rgba(184,184,184,0.15);
+	border-radius: 20px;
+	padding: 5px 10px;
+	display: inline-block;
+	font-size: 11px;
+}
+
+.talk_area li {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: stretch;
+	position: relative;
+}
+
+.talk_area li > div {
+	box-sizing: border-box;
+}
+
+.talk_area li .talk_icon {
+	width: 28px;
+}
+
+.talk_area li .talk_balloon_box {
+	padding: 10px 20px 10px 10px;
+	max-width: 86%;
+	position: relative;
+}
+
+.talk_area li .talk_balloon {
+	padding: 14px;
+	background: #FFF;
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));
+	border-radius: 0px 20px 20px 20px;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.myself {
+	flex-flow: row-reverse;
+}
+
+.myself .talk_balloon_box {
+	padding: 10px 0px 10px 10px !important;
+}
+
+.myself .talk_balloon {
+	border-radius: 20px 0px 20px 20px !important;
+}
+
+.talk_area li .talk_balloon > p {
+	font-size: 13px;
+	line-height: 160%;
+}
+
+.talk_area li .talk_balloon small {
+	font-size: 11px;
+}
+
+.myself .talk_balloon_box {
+    padding: 10px 20px 10px 10px;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    margin-left: auto;
+}
+
+.talk_area li .send_time {
+	font-size: 9px;
+	color: #8D8C8C;
+    position: relative;
+}
+
+.talk_area li .send_time > span {
+	bottom: 0px;
+    right: -33px;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+}
+
+.kidoku::before {
+	content: '既読';
+	top: -14px;
+	right: 2px;
+	position: absolute;
+}
+
+.myself .send_time > span {
+	bottom: 6px !important;
+    right: 0px !important;
+    left: -40px;
+}
+
+.talk_area_map {
+	width: 200px;
+	height: 160px;
+	background: url("../img/map_dummy.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center;
+	border-radius: 20px;
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));
+}
+.talk_area_map iframe{
+	width:100%;
+	height:100%;
+}
+.talk_area_btn {
+	width: 347px;
+	margin: 20px auto;
+	border-radius: 10px;
+	position: relative;
+	text-align: center;
+}
+
+.talk_area_btn p {
+	padding: 2px 0px;
+}
+
+.talk_area_btn p:nth-of-type(1) {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.talk_area_btn p:nth-of-type(2) {
+	font-size: 11px;
+	color: #878889;
+}
+
+.talk_area_btn a {
+	display: block;
+	padding: 12px 20px;
+}
+
+.yellow_base {
+	background: #FFF500;
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));
+}
+
+.buy_square {
+	background: #24B4EA;
+	color: #FFF;
+}
+
+.buy_ellipse {
+	background: #24B4EA;
+	color: #FFF;
+	border-radius: 15px;
+	padding: 15px 0;
+}
+
+.cancel {
+	background: #414042;
+	color: #FFF;
+	text-align: left !important;
+	width: 306px;
+	left: -20px;
+	position: relative;
+}
+
+.cancel::after {
+	content: '';
+	background: url("../img/icon_check_gray.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.start a {
+	padding: 20px !important;
+}
+
+.start::after {
+	content: '';
+	background: url("../img/icon_start.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 49px;
+	height: 49px;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.about_cancel {	
+	font-size: 11px !important;
+	padding: 10px 0px 0px;
+}
+
+
+.talk_area .modal-link {
+    font-size: 11px !important;
+	color: #5BBEEA;
+	padding: 5px 0px 0px;
+}
+
+.talk_area .modal-link a::after {
+    display: none;
+}
+
+.talk_orange_btn {
+	font-size: 11px !important;
+	color: #FB7122;
+	text-align: center;
+	border: 1px solid #FB7122;
+	position: relative;
+	margin: 20px 0px 0px;
+	border-radius: 5px;
+}
+
+.talk_orange_btn a {
+	display: block;
+	padding: 5px 0px;
+}
+
+.arrow_mark::after {
+	content: '';
+	background: url("../img/arrow_right_orange.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 3px;
+	height: 7px;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+h6.talk_kiji_ttl {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px dotted rgba(41,39,36,0.1);
+	padding: 0px 0px 10px;
+    margin: 0px 0px 10px;
+}
+
+.talk_lesson_ttl {
+	font-weight: bold;
+	padding: 5px 0px;
+}
+
+.detail_wrap {
+	font-size: 14px;
+}
+
+.detail_ttl {
+	padding: 5px 0px;
+}
+
+.detail_date {
+	text-indent: 1.2em;
+	padding: 2px 0px;
+}
+
+.pickup_cancel_lesson {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0px 0px;
+}
+
+.pickup_cancel_lesson > div {
+	box-sizing: border-box;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(1) {
+	width: 75%;
+	border-left: 2px solid #E8793B;
+	padding: 0px 6px;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(1) p {
+	padding: 4px 0px;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(1) p:nth-of-type(1) {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(1) p:nth-of-type(2) {
+	font-size: 11px;
+	color: #798186;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(2) {
+	width: 25%;
+}
+
+.pickup_cancel_lesson > div:nth-of-type(2) img {
+	border-radius: 5px;
+	width: 66px;
+	height: auto;
+}
+
+
+

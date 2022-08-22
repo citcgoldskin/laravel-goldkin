@@ -1,0 +1,284 @@
+@charset "utf-8";
+/*cjh*/
+.icon_s30 img {
+    border-radius: 50%;
+}
+
+.talk_area li .talk_icon > img {
+    border-radius: 50%;
+}
+
+.talk_balloon {
+    overflow-wrap: anywhere;
+}
+
+.talk_area li .talk_balloon {
+    word-wrap: break-word;
+}
+
+.message_text {
+    overflow: hidden;
+    max-height: 45px;
+}
+
+.subscription_day {
+    cursor: pointer;
+}
+
+.trainer-name ul li img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+/* ---rcr register profile ---*/
+#autoload-email {
+    font-size: 12px;
+}
+
+.error_text {
+    clear: both;
+    display: block;
+    font-size: 11px;
+    padding: 5px 0 0 5px;
+    color: #d91b1b;
+}
+
+.photo_btn{
+    text-align: center;
+}
+
+/*.calendar-area .date-area ul li:nth-child(1) {
+    text-align: left!important;
+    color: #FB7122!important;;
+    position: relative!important;;
+    font-size: 12px!important;;
+}
+.calendar-area .date-area ul li:nth-child(3) {
+    text-align: right!important;;
+    color: #FB7122!important;;
+    position: relative!important;;
+    font-size: 12px!important;;
+}*/
+
+/*.calendar-area .date-area ul li.enabled {
+    color: #FB7122;
+}
+
+.calendar-area .date-area ul li.disabled {
+    color: #B8B8B8;
+}*/
+
+.calendar-area .date-area .calendar-box table .bg-color-01, .ok-icon3, .ok-icon2{
+    cursor: default;
+}
+.calendar-area .date-area .calendar-box table .bg-color-01:hover, .ok-icon2:hover{
+    background: #75D1ED;
+    font-size: 16px;
+    color: #FFF!important;
+}
+.str-cell{
+    min-width: 30px;
+    text-align: right;
+    display: inline-block;
+}
+
+.tabs .checked {
+    border-bottom: 2px solid #fb7122;
+    color: #fb7122;
+    font-weight: bold;
+}
+
+.tabs .c_tab_content {
+    padding: 40px 10px 0;
+    clear: both;
+    overflow: initial !important;
+}
+.tabs .c_tab_content.showing {
+    overflow: inherit !important;
+}
+
+.form_page .c_tab_content {
+    padding: 0px 15px;
+}
+
+.info_wrap .c_tab_content {
+    padding: 0px;
+}
+.info_wrap .c_tab_content .lesson_list_wrap {
+    padding: 10px 0px 110px;
+    margin: 0px 15px;
+}
+
+.area_info {
+    display:none;
+}
+
+.non_validate, .validate {
+    display: none;
+}
+
+.word-break{
+    word-break: break-word;
+}
+
+.recommend_list .swiper-slide{
+    box-sizing: border-box;
+}
+
+.favorite-senpai_list .lesson_box img{
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #ff740a;
+}
+.ttl-block{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+ul.date_custom li.nobk input[type=date] {
+    background: none !important;
+    border-bottom: 1px solid #B8B8B9;
+    border-radius: 0 !important;
+    padding: 10px 5px;
+}
+
+ul.date_custom li.nobk {
+    width: 40%;
+}
+
+ul.date_custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+.coupon_ticket {
+    background: #FFF;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+.coupon_ticket:before {
+    content: "";
+    background: url("../img/coupon.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+.coupon_ticket ul {
+    display: flex;
+    align-items: center;
+}
+.coupon_ticket ul li {
+    border: none;
+}
+.coupon_ticket ul li h3 {
+    margin: 0 !important;
+    color: #FA4712;
+}
+.coupon_ticket ul li:nth-child(1) div {
+    padding: 0 !important;
+}
+.coupon_ticket ul li:nth-child(2) {
+    font-weight: normal;
+}
+.coupon_ticket ul li:last-child {
+    margin-left: auto;
+    /*background: url("../img/check-it.svg") no-repeat right 50%;*/
+    background-size: 21px;
+    padding-right: 26px;
+}
+
+.show_checked {
+    margin-left: auto;
+    background: url(../img/check-it.svg) no-repeat right 50%;
+    background-size: 21px;
+    padding-right: 26px;
+}
+
+.hide_checked {
+    margin-left: auto;
+    background-size: 21px;
+    padding-right: 26px;
+}
+
+.no-data{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.kakunin_no p {
+    display: inline-block;
+}
+.kakunin_no p::after {
+    content: '';
+    /*background: url("../img/icon_07.svg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    top: 3px;
+    right: -4px;
+    position: relative;
+}
+
+.board_box .list_area li.expired p{
+    padding: 5px 0px;
+}
+
+#area_contents {
+    display: none;
+    max-width: 780px;
+    margin: 0px auto;
+    position: relative;
+    padding: 60px 0;
+}
+
+.calendar-area .date-area .calendar-box table .week{
+    width: 25px!important;
+}
+
+.evaluation_list li > div.score_percent {
+    width: 21%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.evaluation_list li > div.score_percent span {
+    position: relative;
+}
+.evaluation_list li > div.score_percent span::after {
+    content: '%';
+    display: inline-block;
+    top: 61%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 100%;
+}
+.soudan_ok_area li {
+    margin-bottom: 5px;
+}
+.faq-area .a_box::before {
+    vertical-align: top;
+}
+.faq-area .no_edit_textarea {
+    border: none;
+    padding: 0px !important;
+    background: unset;
+}
+.cur_point {
+    cursor: pointer;
+}

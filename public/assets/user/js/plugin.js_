@@ -1,0 +1,51 @@
+/*スライダー*/
+var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  slidesPerView: "auto",
+  pagination: '.swiper-pagination',
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+})
+/*ハンバーガーメニュー*/
+function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
+  var closeerea = document.getElementById('cloce_erea');
+
+  hamburger.addEventListener('click', function () {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function () {
+    body.classList.remove('nav-open');
+  });
+  closeerea.addEventListener('click', function () {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
+
+
+ScrollReveal().reveal('.Scroll_box', {
+  duration: 1600,
+  origin: 'top',
+  distance: '50px',
+  reset: false,
+});
+
+/*スムーズスクロール*/
+$(function(){
+  $('a[href^="#"]').click(function(){
+    let speed = 500;
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top + 100;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});

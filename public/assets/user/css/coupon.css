@@ -1,0 +1,1026 @@
+@charset "utf-8";
+/* CSS Document */
+
+section#coupon input[type="text"] {
+	filter: none !important;
+	border: 2px solid #C8D1D3;
+}
+
+body.mypage section.slider_area {
+	background: #FFF;
+	padding: 30px 15px 10px;
+	margin: 0px 0px 30px;
+}
+
+
+.no_coupon {
+	text-align: center;
+	padding: 40px 0px;
+}
+
+.no_coupon > p {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 0px;
+	color: #798186;
+}
+
+.no_coupon > p img {
+	width: 128px;
+	height: auto;
+}
+
+section#confirm {
+	margin: 0px;
+	padding: 0px;
+}
+
+section#confirm div.inner_box:nth-of-type(1) ,
+section#indivisual div.inner_box:nth-of-type(1) {
+	border-bottom: 1px dotted rgba(41,39,36,0.1);
+}
+section#indivisual {
+	margin-top: 30px;
+}
+section#indivisual ul{
+	margin: 15px 0 0 0;
+}
+section#confirm div.inner_box{ 
+	padding: 30px 15px;
+}
+
+section#identification div.inner_box {
+	padding: 0px 0px 15px;
+}
+
+section#identification div.white_box {
+	filter: drop-shadow(0px 5px 15px rgba(27,28,32,0.1));
+}
+
+section#identification div.white_box h3 {
+	border-bottom: 1px dotted rgba(41,39,36,0.1);
+	position: relative;
+	padding: 0px 0px 10px;
+}
+
+section#identification div.white_box h3::after {
+	content: '';
+	background: url("../img/arrow_right.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 4px;
+	height: 10px;
+	display: inline-block;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+section#identification div.white_box ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+section#identification div.white_box li {
+	box-sizing: border-box;
+}
+
+section#identification div.white_box li:first-child {
+	width: 60px;
+	text-align: center;
+}
+
+section#identification div.white_box li:first-child img {
+	width: auto;
+	max-height: 56px;
+}
+
+section#identification div.white_box li:last-child {
+	padding-left: 15px;
+}
+
+section#identification div.white_box li:last-child > p {
+	font-size: 11px;
+	padding: 2px 0px;
+}
+
+section#identification div.white_box li:last-child > p:nth-of-type(1) {
+	font-size: 12px;
+}
+
+section#identification div.white_box .kome_txt {
+	font-size: 10px;
+	text-indent: -12px;
+	margin-left: 12px;
+	padding: 10px 0px 0px;
+	line-height: 130%;
+	color: #798186;
+}
+
+section#coupon_msg h3 {
+	font-size: 18px;
+	margin: 0px;
+	letter-spacing: 0.2px;
+}
+
+section#example {
+	padding: 0px;
+}
+
+section#example h3 {
+	text-align: center;
+	border-bottom: 1px dotted rgba(41,39,36,0.1);
+	padding: 0px 0px 10px;
+}
+
+section#example ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 10px 0px 0px;
+}
+
+section#example li {
+	box-sizing: border-box;
+}
+
+section#example li:first-child {
+	width: 27%;
+}
+
+section#example li:last-child {
+	padding-left: 10px;
+	width: 73%;
+}
+
+section#example li:last-child p {
+	font-size: 12px;
+	line-height: 130%;
+	padding: 2px 0px;
+	text-indent: -14px;
+	margin-left: 14px;
+}
+
+.ex_correct li:last-child > p::before {
+	content: '✔';
+	color: #24B4EA;
+	padding-right: 3px;
+}
+
+.ex_error li:last-child > p::before {
+	content: '×';
+	color: #FA4712;
+	font-weight: bold;
+	padding-right: 3px;
+}
+
+.file_btn_area {
+	padding: 10px 0px 0px;
+	position: relative;
+}
+
+.file_btn_area span {
+	top: 57%;
+	left: 210px;
+	transform: translateY(-50%);
+	position: absolute;
+	font-size: 12px;
+}
+
+.file_btn_area input[type="file"] {
+	display: none;
+}
+
+.file_btn_area .btn_gray-line {
+	background: #FFF;
+	font-size: 12px;
+	padding: 12px 0px;
+	width: 194px;
+	margin: 0px 0px 20px;
+}
+
+.masking_wrap {
+	border: 1px solid #E9E9E8;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 20px 0px 0px;
+}
+
+.masking_wrap h3 {
+	color: #FA4712;
+	text-align: left;
+	font-size: 13px;
+	border-bottom: 0px !important;
+	padding: 0px !important;
+}
+
+.masking_wrap .base_txt {
+	font-size: 12px;
+}
+
+.marking_img {
+	text-align: center;
+	padding: 10px 0px 0px;
+}
+
+.marking_img img {
+	width: 161px;
+	height: auto;
+}
+
+section#preparation .base_txt {
+	font-size: 14px;
+}
+
+section#coupon {
+    padding: 30px 0px 0px;
+}
+
+section#coupon .conditions_box {
+    padding: 15px 0px;
+}
+
+section#coupon .conditions_box li:first-child {
+    font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	width: 43% !important;
+}
+
+section#coupon .conditions_box li:first-child span {
+	width: 100%;
+    top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	position: absolute;
+	text-align: left;
+}
+
+section#coupon .conditions_box li:last-child {
+	width: 57% !important;
+}
+
+.management_wrap {
+	background: #FFF;
+	padding: 0px 15px 10px;
+}
+
+.management_mv {
+	background: url("../img/coupon/management_back.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center bottom;
+	height: 160px;
+	position: relative;
+}
+
+
+@media screen and (max-width: 736px) {
+
+.management_mv {
+	background-size: 100% auto;
+}
+}
+
+.management_mv > p {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	bottom: -50px;
+	position: relative;
+	line-height: 160%;
+}
+
+.management_wrap .base_txt {
+	font-size: 14px;
+	padding: 20px 0px;
+}
+
+.tekiyou_txt {
+	padding: 0px 0px 20px;
+	font-size: 12px;
+	font-feature-settings: 'palt';
+}
+.mlr15{
+	margin: 0 15px;
+}
+
+/* チケット部分 ----------------------------------------------------*/
+.ticket-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0px auto ;
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.15));
+    color: #666;
+	width: 100%;
+	overflow: hidden;
+}
+
+.ticket-wrap .ticket_header {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.ticket-wrap .ticket_header::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    border-top: 2px dashed #E5E5E5;
+    left: 30px;
+    right: 30px;
+    bottom: -9px;
+    z-index: 2;
+}
+
+.ticket-wrap .ticket_rip {
+    position: relative;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 0 18px;
+    background-color: #fff;
+}
+
+.ticket-wrap .ticket_rip::before, .ticket-wrap .ticket_rip::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 50%;
+    top: 50%;
+}
+
+.ticket-wrap .ticket_rip::before {
+    left: -18px;
+}
+
+.ticket-wrap .ticket_rip::after {
+    right: -58px;
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.ticket-wrap .ticket_body {
+    background-color: #fff;
+    padding: 10px 20px 40px;
+    border-radius: 0 0 5px 5px;
+}
+
+
+@media screen and (max-width: 736px) {
+
+.ticket-wrap .ticket_rip::after {
+    right: -57px;
+}
+
+}
+
+/* チケット部分/end ----------------------------------------------------*/
+
+.coupon_ttl {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.coupon_ttl li {
+	box-sizing: border-box;
+}
+
+.coupon_icon {
+	width: 40px;
+}
+
+.coupon_icon img {
+	width: 40px;
+	height: auto;
+	border-radius: 50px;
+}
+
+.coupon_name {
+	width: 84%;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 10px !important;
+}
+
+.ticket_limited {
+	display: inline-block;
+}
+
+.ticket_limited > p {
+	padding: 4px 0px;
+}
+
+.ticket_limited > p:nth-of-type(1) {
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+}
+
+.ticket_limited > p:nth-of-type(1)::after {
+	content: '';
+	background: url("../img/coupon/icon_ticket.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+.ticket_limited > p:nth-of-type(1) small {
+	font-size: 9px;
+}
+
+.ticket_limited > p:nth-of-type(2) {
+	font-size: 12px;
+}
+
+.coupon_henkin .acd-label {
+	padding: 0px;
+	text-align: center;
+	font-size: 11px;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.coupon_henkin .acd-label::after {
+    width: 13px;
+    height: 6px;
+    right: -45px;
+	top:3px;
+	position: relative;
+}
+
+.coupon_henkin .acd-check:checked + .acd-label::after {
+    right: -31px;
+}
+
+.coupon_henkin .acd-label::before {
+	content: '詳細を見る';
+	width: 100px;
+	height: auto;
+	background: none;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.coupon_henkin .acd-check:checked + .acd-label::before {
+	content: '閉じる';
+	width: 100px;
+	height: auto;
+	background: none;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.coupon_content ul {
+	padding: 5px 0px;
+}
+
+.coupon_content li {
+	color: #798186;
+	font-size: 12px;
+	padding: 4px 0px;
+}
+
+.coupon_content li::before {
+	content: '・';
+}
+
+.acd-check:checked + .acd-label + .coupon-content {
+    top: 8px;
+    position: relative;
+}
+
+.acd-content .modal-link_blue {
+	position: absolute;
+	right: 0px;
+	top: -20px;
+}
+
+.coupon_modal .modal-content {
+    padding: 20px 0px;
+}
+
+.coupon_modal h2.modal_ttl {
+    font-size: 24px;
+}
+
+.coupon_modal .modal_inner section {
+	margin: 0px;
+	padding: 30px 20px;
+}
+
+.coupon_modal .modal_inner section:last-of-type {
+	margin: 0px;
+	padding: 30px 20px;
+}
+
+.coupon_modal .modal_inner section::after {
+	content: '';
+	background: rgba(41,39,36,0.1);
+	width: 100%;
+	height: 1px;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	display: inline-block;
+}
+
+.coupon_modal .modal_inner section:last-of-type::after {
+	display: none;
+}
+
+h3.case_ttl {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 0px 20px;
+}
+
+h3.case_ttl > span {
+	position: relative;
+	box-sizing: border-box;
+}
+
+h3.case_ttl .case_icon {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: 51px;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+h3.case_ttl .case_icon::after {
+	content: '';
+	background: #5BBEEA;
+	border-radius: 20px;
+	width: 100%;
+    height: 25px;
+    display: inline-block;
+    z-index: -1;
+    top: -3px;
+    left: 0px;
+    position: absolute;
+}
+
+h3.case_ttl > span:nth-of-type(2) {
+	width: 79%;
+	left: 60px;
+}
+
+h3.case_ttl > span:nth-of-type(2) small {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.case_list li {
+	font-size: 13px;
+	padding: 10px 0px;
+	text-indent: -13px;
+	margin-left: 13px;
+	line-height: 160%;
+	text-align: justify;
+}
+
+.case_list li::before {
+	content: '・';
+}
+
+h4.case_ttl_02 {
+	font-size: 13px;
+	font-feature-settings: 'palt';
+	line-height: 140%;
+	position: relative;
+	padding-left: 13px;
+	margin: 18px 0px 26px;
+}
+
+h4.case_ttl_02::before {
+	content: '';
+	background: #B8B8B8;
+	width: 3px;
+	height: 100%;
+	display: inline-block;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+h4.case_ttl_02::after {
+	content: '';
+	background: url("../img/coupon/arrow.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 33px;
+	height: 16px;
+	display: inline-block;
+	bottom: -24px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+h5.case_ttl_03 {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.coupon_modal .modal_txt {
+	text-align: left;
+	padding: 20px 20px 0px;
+}
+
+.henkin_img {
+	padding: 10px 0px;
+}
+
+.logic_img {
+	padding: 10px 0px;
+	width: 230px;
+}
+
+.close_btn_area {
+	width: 13px;
+	right: 20px;
+	position: absolute;
+}
+
+section#issue .coupon_name {
+	width: auto;
+	padding-left: 24px !important;
+	position: relative;
+}
+
+section#issue .coupon_name::before {
+	content: '';
+	background: url("../img/coupon/icon_ticket.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+section#issue .ticket_body {
+	padding: 5px 44px 15px;
+}
+
+.issue_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0px 0px 26px;
+}
+
+.issue_wrap li {
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.issue_wrap li > span {
+	background: #FA4712;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 1px 7px;
+	margin-right: 6px;
+}
+
+.issue_wrap li small {
+	font-size: 11px;
+}
+
+.issue_wrap li .price_mark {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+section#issue .ticket_limited > p {
+	padding: 2px 0px;
+}
+
+section#issue .ticket_limited > p:nth-of-type(1) {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+section#issue .ticket_limited > p:nth-of-type(1)::after {
+	display: none;
+}
+
+.input_txt {
+	font-size: 12px;
+}
+
+.flex_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.flex_wrap .form_wrap {
+	padding: 0px 10px;
+}
+
+.issue_coution_list {
+	padding: 0px;
+}
+
+.issue_coution_list li {
+	font-size: 12px;
+	padding: 10px 0px;
+	text-indent: -13px;
+	margin-left: 13px;
+	line-height: 160%;
+	color: #798186;
+}
+
+.issue_coution_list li::before {
+	content: '※';
+}
+
+.issue_coution_list li .modal-link_blue {
+	padding: 0px;
+	text-align: left;
+}
+
+.issue_coution_list li .modal-link a::after {
+	display: none;
+}
+
+.coupon_price_list li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 0px;
+}
+
+.coupon_price_list li > div:nth-of-type(1) {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.coupon_price_list li > div:nth-of-type(2) {
+	font-size: 15px;
+}
+
+.coupon_price_list li p {
+	display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    color: #798186;
+	padding: 4px 0px 0px;
+}
+
+.total_price {
+	position: relative;
+	padding: 30px 0px 0px !important;
+}
+
+.total_price::before {
+	content: '';
+	border-bottom: 1px dashed #E5E5E5;
+	width: 100%;
+	top: 10px;
+	left: 0px;
+	position: absolute;
+}
+
+.total_price > div:nth-of-type(2) {
+	font-size: 18px !important;
+}
+
+.coupon_modal section.issue {
+	padding: 10px 20px 0px;
+}
+
+.coupon .swiper-wrapper {
+	padding: 0px 0px 27px;
+}
+
+.coupon .swiper-pagination {
+	bottom: 0px;
+}
+
+.coupon_modal .modal_body .button-area {
+	padding: 0px;
+}
+
+section#friend_area h3 {
+	text-align: center;
+	margin: 0px auto 20px;
+}
+
+.invitation input[type="text"] {
+    filter: none !important;
+    border: 2px solid #C8D1D3;
+}
+
+.invitation section:nth-of-type(n+2)::after {
+	content: '';
+	background: #E5E5E5;
+	width: 100%;
+	height: 1px;
+	display: inline-block;
+	bottom: 30px;
+	left: 0px;
+	position: absolute;
+}
+
+.step_list {
+	position: relative;
+}
+
+.step_list li {
+	font-size: 14px;
+	font-feature-settings: 'palt';
+    position: relative;
+    line-height: 160%;
+    padding: 10px 0px;
+	letter-spacing: 1px;
+}
+
+.step_list li span:nth-of-type(2) {
+    width: 80%;
+	left: 60px;
+	position: relative;
+	display: inline-block;
+}
+
+.step_list li span:nth-of-type(2) big {
+	color: #FF349E;
+	font-size: 18px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.step_list li span:nth-of-type(2) small {
+	color: #FF349E;
+	font-size: 11px;
+}
+
+.step_icon {
+	font-size: 12px;
+	font-feature-settings: 'palt';
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+	letter-spacing: 0px;
+	width: 50px;
+	text-align: center;
+}
+
+.step_icon::after {
+	content: '';
+	width: 50px;
+	height: 25px;
+	border-radius: 20px;
+	display: inline-block;
+	top: -1px;
+	left: 0px;
+	position: absolute;
+	z-index: -1;
+}
+
+.step_1::after {
+	background: #83DDFF;
+}
+
+.step_2::after {
+	background: #37C5FA;
+}
+
+.step_3::after {
+	background: #13A0D5;
+}
+
+.SNS_area {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 0px 20px;
+}
+
+.SNS_area li {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.SNS_area li p {
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 15px 0px;
+	position: relative;
+}
+
+
+
+.SNS_area li p:nth-of-type(1) img {
+	width: auto;
+	max-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.line {
+	color: #1DB901;
+}
+
+.twitter {
+	color: #1DA1F2;
+}
+
+.twitter img {
+	height: 26px !important;
+}
+
+.instagram {
+	color: #DC2D75;
+}
+
+.other {
+	color: #798186;
+}
+
+.other img {
+	width: 28px !important;
+}
+
+h3.invitation_ttl {
+	font-weight: normal;
+	margin: 20px 0px 0px;
+}
+
+section#invitation_code .blue_link a {
+	text-decoration: underline;
+}
+
+.invitation section#invitation_code:last-of-type::after {
+	display: none;
+}
+
+#js-copytext{
+	border: 2px solid #C8D1D3;
+	 width: 100%;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 17px 10px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.number-wrap{
+	position: relative;
+}
+.number-wrap button{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index: 999;
+	top:0;
+	left:0;
+}
+#js-copyalert{
+	color: #888;
+	margin: 10px 0 0 0;
+}

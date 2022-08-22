@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* --------------------------------------------------------------------
+モーダル
+-------------------------------------------------------------------- */
+
+.modal-wrap {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.modal-content {
+	max-width: 500px;
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+	box-shadow: 0px 5px 10px rgba(27, 28, 31, 0.1);
+	background: #fff;
+	position: fixed;
+	display: none;
+	z-index:10000;
+	border-radius: 10px;
+	left: 50% !important;
+	top: 50% !important;
+	transform: translate(-50%,-50%);
+}
+
+.modal_inner {
+	top: 10px;
+    position: relative;
+	z-index: 9;
+}
+
+.modal_basic .modal_inner {
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	width: 90%;
+}
+
+
+#modal-overlay ,
+#modal-overlay2 {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-link {
+	position: relative;
+}
+
+.modal-link a {
+	display: block;
+}
+
+.modal-link a::after {
+	content: '';
+	background: url("../img/icon_unknown.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	top: 4px;
+    left: 10px;
+	position: relative;
+}
+
+.modal-link_blue {
+	color: #5BBEEA;
+	font-size: 12px;
+	padding: 20px 0px;
+	text-align: right;
+    margin: 0px 15px;
+}
+
+.modal-link_blue a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.button-link:hover {
+  cursor: pointer;
+}
+
+.modal_body {
+	max-height: 80vh;
+    min-height: 320px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.completion.modal_body::after {
+	content: '';
+	background: url("../img/bg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:center;
+	display: inline-block;
+	width: 80%;
+	height: 80%;
+	top: 43%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 0;
+}
+
+.completion {
+}
+
+.other_page .completion {
+	background-size: auto 80%;
+}
+
+.completion .modal_inner {
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	position: absolute;
+	width: 100%;
+	padding: 20px 0px 60px;
+}
+
+.other_page .completion .modal_inner {
+	top: 50%;
+}
+
+.no_modal .completion {
+	background: url("../img/bg.png");
+	background-repeat: no-repeat;
+	background-size: auto 80%;
+	background-position: center top 44%;
+	height: 100%;
+	top: 40%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	position: relative;
+}
+
+.no_modal .completion::after {
+	display: none;
+}
+
+.no_modal .button-area {
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+#modal_wrap {
+	height: 100vh;
+}
+
+.no_modal .modal_body {
+	height: 100%;
+	overflow: inherit;
+}
+
+.no_modal .completion .modal_inner {
+	top: 50%;
+	background: none !important;
+}
+
+h2.modal_ttl {
+	text-align: center;
+	width: 100%;
+	line-height: 160%;
+	font-size: 22px;
+}
+
+h2.modal_ttl_02 {
+	line-height: 160%;
+	font-size: 20px;
+}
+
+h2.modal_ttl_03 {
+	line-height: 160%;
+	font-size: 16px;
+}
+
+.modal_txt {
+	width: 100%;
+	font-size: 13px;
+	padding: 20px 20px 0px;
+	text-align: left;
+	line-height: 160%;
+	box-sizing: border-box;
+}
+
+.modal_txt_bottom {
+	bottom: -26%;
+	position: absolute;
+}
+
+.no_modal .modal_txt_bottom {
+	bottom: 10%;
+	position: absolute;
+}
+
+.modal_txt_02 {
+	width: 100%;
+	font-size: 12px;
+	padding: 20px 0px;
+	text-align: left;
+	line-height: 160%;
+}
+
+.modal_body .modal_txt  {
+	text-align: center;
+}
+
+.modal_body .button-area {
+/*	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+*/
+	padding: 30px 0px 0px;
+}
+
+.modal .btn_base {
+	width: 200px;
+}
+
+.modal .btn_base a {
+	padding: 17px 0px;
+}
+
+
+
+
+/* --------------------------------------------------------------------
+一定時間表示される
+-------------------------------------------------------------------- */
+
+#modalWrap {
+	display: none;
+	background: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.modalBox {
+	position: fixed;
+	width: 85%;
+	max-width: 420px;
+	height: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+	opacity: 1;
+	display: none;
+	border-radius: 3px;
+	z-index: 1000;
+}
+
+.modalInner {
+	text-align: center;
+	box-sizing: border-box;
+	background-color: rgba(65,64,66,0.8);
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 5px;
+	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.1));
+}
+
+.modalInner p {
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+
+
+
+
+
+

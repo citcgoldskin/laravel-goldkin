@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* --------------------------------------------------------------------
+スライド
+-------------------------------------------------------------------- */
+
+.slider-area {
+	position: relative;
+}
+
+.swiper-wrapper {
+	align-items: flex-start;
+	/*justify-content: space-between;*/
+	padding: 10px 0px;
+}
+
+.swiper-slide {
+	box-sizing: border-box;
+}
+
+.swiper-slide a {
+	display: block;
+}
+
+.recommend0 {
+	height: 420px;
+}
+
+.recommend_list .swiper-slide {
+	width: 241px;
+	left: 1%;
+	margin: 0px 10px;
+}
+
+.service_list .swiper-slide {
+	width: 200px;
+	left: 1%;
+	margin: 0px 10px;
+}
+
+.favorite0 {
+	height: 140px;
+}
+
+.favorite-senpai_list .swiper-slide {
+	width: 80px !important;
+	left: 1%;
+	margin: 0px 4px !important;
+}
+
+.favorite-senpai_list .swiper-slide p {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	padding:10px 0 5px 0px;
+}
+
+.favorite-senpai_list .swiper-slide p > span {
+	font-weight: normal;
+}
+
+.request {
+	height: 270px;
+	top: -10px;
+	position: relative;
+}
+
+.profile .swiper-pagination {
+	bottom: 20px !important;
+}
+
+.lesson_photo_list {
+	padding: 0px !important;
+}
+
+
+
+
+
+
+
+

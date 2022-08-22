@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* --------------------------------------------------------------------
+全ページ共通
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+
+#contents {
+	width: auto;
+	padding-bottom: 80px;
+}
+	#contents.long{
+		padding-bottom: 140px;
+	}
+		#contents.superlong{
+		padding-bottom: 170px;
+	}
+			#contents.ultralong{
+		padding-bottom: 220px;
+	}
+		#contents.short{
+		padding-bottom: 0;
+	}
+	#contents.pb60{
+		padding-bottom: 60px;
+	}
+	#contents.nopt{
+	padding-top: 0 !important;
+}
+section {
+}
+
+.footer_link li a span::after {
+	top: -3px;
+    right: -3px;
+}
+
+.rb_btn_area {
+	right: 10px;
+}
+
+
+}
+
+@media screen and (max-width: 320px) {
+	.c-baloon{
+		max-width: 210px;
+		top:30%;
+	}
+}
+@media screen and (max-width: 736px) {
+
+.footer_link li a span::after {
+    right: -1px;
+}
+
+.three_box {
+	justify-content: space-around;
+}
+}
+
+
+/* --------------------------------------------------------------------
+ヘッダー
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+.header_area {
+	margin: 0px 10px;
+}
+}
+
+
+
+/* --------------------------------------------------------------------
+フッター
+-------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------
+起動画面
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 740px) {
+
+.top_wrap {
+	margin: 0px 20px;
+}
+
+.top_category li {
+	width: 48%;
+}
+
+}
+
+
+/* --------------------------------------------------------------------
+アイコン設定
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 980px) {
+.profile_icon {
+	width: 60px;
+	height: 60px;
+}
+
+.slider-icon {
+	bottom: 24%;
+}
+
+}
+
+/* --------------------------------------------------------------------
+完了ページ
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 736px) {
+
+.completion_box .modal_inner {
+	width: 90%;
+}
+
+}
+
+
+@media screen and (max-width: 736px) {
+
+.map {
+    height: 300px;
+}
+}
+
+
+@media screen and (max-width: 736px) {
+.security_number .input-text::after {
+    right: 4%;
+}
+
+.send_area {
+	justify-content: space-between !important;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+.talkroom_menu li:nth-child(2) {
+    width: 79% !important;
+}
+}
+
+
+
+/* --------------------------------------------------------------------
+その他
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 736px) {
+
+.hyouka_send {
+	width: 70%;
+}
+
+.map_area {
+	height: 60vh;
+}
+
+.back_wrap .white_box {
+	height: 40%;
+}
+
+.profile_box {
+	bottom: 66%;
+}
+
+
+}
+
+
+
+
+/* --------------------------------------------------------------------
+モーダル
+-------------------------------------------------------------------- */
+
+@media screen and (max-width: 736px) {
+
+.completion.modal_body::after {
+	top: 50% !important;
+}
+}
+
+
+
+
+
+
+
+
+
